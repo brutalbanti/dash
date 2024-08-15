@@ -1,0 +1,413 @@
+.product-section {
+  padding: 16px 0 25px 0;
+}
+
+.product__content {
+  display: flex;
+  gap: 20px;
+}
+
+.product-crumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product__crumb-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: black;
+}
+
+.product__left {
+  width: 100%;
+}
+
+.product__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  padding: 12px 14px 4px 14px;
+  border-bottom: 1px solid black;
+  span {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
+
+.product__items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 428px;
+  margin-top: 16px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item__left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.product-item__btn {
+  width: 220px;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(240, 239, 239, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.product-item__add-btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: rgba(243, 243, 243, 1);
+  width: 100%;
+}
+
+.product__add-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  padding: 16px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 1);
+  margin-top: 32px;
+  text-align: left;
+}
+
+.product-section {
+  padding: 16px 0 25px 0;
+}
+
+.product-crumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product__title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: black;
+}
+
+.product-item.block {
+  padding: 16px 0;
+}
+
+.product-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 16px;
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  &__btn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    padding: 4px 8px;
+    background: rgba(239, 239, 239, 1);
+    outline: none;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__wrap,
+  &__operation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(213, 213, 213, 1);
+    padding: 6.5px 8px;
+  }
+
+  &__wrap img,
+  &__operation img,
+  &__name img {
+    cursor: pointer;
+  }
+
+  &__operation {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    padding-left: 52px;
+  }
+
+  &__add-product,
+  &__add-dress,
+  &__add-order {
+    display: flex;
+    align-items: center;
+    background: rgba(213, 213, 213, 1);
+    padding: 6.5px 8px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+  }
+
+  &__add-product {
+    margin-left: 104px;
+  }
+
+  &__add-dress {
+    margin-left: 52px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__status {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  &__left,
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+  }
+
+  &__operations {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 156px;
+  }
+
+  &__addionational {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    background: rgba(213, 213, 213, 1);
+    padding: 6.5px 8px 6.5px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    img {
+        cursor: pointer;
+    }
+  }
+}
+.info-header {
+  padding: 16px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  &__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  &__item-left {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__sort-icon {
+    width: 12px;
+  }
+
+  &__right {
+    display: flex;
+    gap: 125px;
+    margin-right: -52px;
+  }
+}
+
+.product-block-title__right {
+  display: flex;
+  gap: 8px;
+}
+
+.product-block-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__btn {
+    display: flex;
+    gap: 8px;
+    background: rgba(239, 239, 239, 1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+  }
+  &__btn.active {
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+  &__right {
+    display: flex;
+    gap: 8px;
+  }
+  &__icons-btn {
+    padding: 4px 8px;
+    background: rgba(239, 239, 239, 1);
+    border-radius: 4px;
+  }
+
+  &__input-wrap {
+    display: flex;
+    gap: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background: rgba(239, 239, 239, 1);
+  }
+
+  &__input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    background: rgba(239, 239, 239, 1);
+  }
+  &__input::placeholder {
+    color: black;
+  }
+}
+
+.product-addionational__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(213, 213, 213, 1);
+  padding: 6.5px 8px;
+}
+
+.product-addionational__block img {
+  cursor: pointer;
+}
+
+.product-addionational__block.first {
+  margin-left: 52px;
+  padding-left: 52px;
+}
+
+.product-addionational__block.second {
+  margin-left: 104px;
+  padding-left: 52px;
+}
+
+.product-item-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 8px;
+    background: rgba(239, 239, 239, 1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-items: center;
+  }
+
+  &__btn.active {
+    border: 1px solid rgba(47, 168, 55, 1);
+    background: rgba(210, 241, 212, 1);
+  }
+
+  &__right {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__icons-btn {
+    padding: 4px 8px;
+    background: rgba(239, 239, 239, 1);
+    border-radius: 4px;
+  }
+
+  &__input-wrap {
+    display: flex;
+    background: rgba(239, 239, 239, 1);
+    gap: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  &__input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    background: rgba(239, 239, 239, 1);
+  }
+}

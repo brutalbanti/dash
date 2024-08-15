@@ -1,0 +1,209 @@
+.chat-content {
+  background: rgba(240, 240, 240, 1);
+  min-height: 755px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  width: 400px;
+}
+
+.chat__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+}
+
+.chat-items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat__item {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.chat-item {
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    max-width: 289px;
+    width: 100%;
+  }
+  &__time {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.chat-bottom {
+  padding: 8px;
+  background: rgba(220, 220, 220, 1);
+}
+
+.chat-message {
+  &__input-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+  }
+
+  &__additional {
+    margin-top: 32px;
+    background: rgba(244, 244, 244, 1);
+    padding: 11px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__btn {
+    padding: 4px;
+    border: 0.5px solid rgba(87, 87, 87, 1);
+    position: relative;
+  }
+  &__btn.active {
+    border: 2px solid rgba(47, 168, 55, 1);
+    background: rgba(210, 241, 212, 1);
+  }
+  &__btn:first-child {
+    border-radius: 4px 0 0 4px;
+    z-index: 1;
+  }
+  &__btn:last-child {
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -1px;
+  }
+}
+
+.chat-item {
+  background: rgba(220, 220, 220, 1);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  &__reward-top {
+    display: flex;
+    justify-content: space-between;
+    img {
+      cursor: pointer;
+    }
+  }
+  &__reward-textarea {
+    resize: none;
+    background: transparent;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    outline: none;
+  }
+  &__reward-textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: black;
+    font-family: "Inter", sans-serif;
+  }
+  &__reward-bottom {
+    padding: 11px 7px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__reward-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__reward-text {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+  }
+}
+.tooltip-container:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 68px;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+  bottom: -32px;
+  background: rgba(87, 87, 87, 1);
+}
+.tooltip-container.second:hover::after {
+  left: 87px;
+  top: -40px;
+  bottom: inherit;
+}
+.tooltip-container.second:hover::before {
+  left: 84%;
+  bottom: 22px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(87, 87, 87, 1) transparent transparent transparent;
+}
+.tooltip-container:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% - 6px); /* регулирует положение треугольника */
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent rgba(87, 87, 87, 1) transparent;
+  transition: opacity 0.2s;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  left: 20%;
+  bottom: -7px;
+}
+
+.tooltip-container::after,
+.tooltip-container::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}

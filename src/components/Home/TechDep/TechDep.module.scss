@@ -1,0 +1,109 @@
+.tech-section {
+    padding: 16px 0 16px 0;
+  }
+  
+  .tech__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-item {
+    background: rgba(235, 235, 235, 1);
+    padding: 16px;
+    height: 340px;
+    
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    &__title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24.2px;
+    }
+  
+    &__btn {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.36px;
+      width: 154px;
+      padding: 4px 8px;
+      background: white;
+      outline: none;
+    }
+  }
+  
+  .tech-item-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    &__btn {
+      display: flex;
+      gap: 8px;
+      background: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      align-items: center;
+    }
+    
+    &__btn.active {
+      border: 1px solid rgba(47, 168, 55, 1);
+      background: rgba(210, 241, 212, 1);
+    }
+    
+    &__right {
+      display: flex;
+      gap: 8px;
+      margin-right: 117px;
+    }
+    
+    &__icons-btn {
+      padding: 4px 8px;
+      background: white;
+      border-radius: 4px;
+    }
+  
+    &__input-wrap {
+      display: flex;
+      background: white;
+      gap: 8px;
+      border-radius: 4px;
+      padding: 4px 8px;
+    }
+  
+    &__input {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.36px;
+    }
+    &__input::placeholder {
+      color: black;
+    }
+  }
+  
+  .tech-bottom__items {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .tech-bottom__item {
+    width: 100%;
+    background: rgba(213, 213, 213, 1);
+    padding: 6.5px 8px;
+    cursor: pointer;
+  }
+  

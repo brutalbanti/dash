@@ -1,0 +1,249 @@
+.order-list-section {
+  padding: 16px 0 25px 0;
+}
+
+.order-list-crumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.order-list__title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: black;
+}
+
+.order-list-item.block {
+    padding: 16px 0;
+}
+.order-list-item {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+  }
+
+  &__btn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    padding: 4px 8px;
+    background: rgba(210, 241, 212, 1);
+    outline: none;
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.order-list-item-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 8px;
+    background: rgba(239, 239, 239, 1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__btn.active {
+    border: 1px solid rgba(47, 168, 55, 1);
+    background: rgba(210, 241, 212, 1);
+  }
+
+  &__right {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__icons-btn {
+    padding: 4px 8px;
+    background: rgba(239, 239, 239, 1);
+    border-radius: 4px;
+  }
+
+  &__input-wrap {
+    display: flex;
+    background: rgba(239, 239, 239, 1);
+    gap: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  &__input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    background: rgba(239, 239, 239, 1);
+  }
+  &__input::placeholder {
+    color: black;
+}
+}
+
+.order-list-bottom__items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-list-bottom__item {
+  width: 100%;
+  background: rgba(213, 213, 213, 1);
+  padding: 6.5px 8px;
+  cursor: pointer;
+}
+
+.info-header {
+  padding: 16px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  &__item-left {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__sort-icon {
+    width: 12px;
+  }
+
+  &__right {
+    display: flex;
+    gap: 125px;
+    margin-right: 207px;
+  }
+}
+
+.order-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__wrap,
+  &__operation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(213, 213, 213, 1);
+    padding: 6.5px 8px;
+  }
+  &__wrap {
+    img {
+        cursor: pointer;
+    }
+  }
+  &__operation {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    padding-left: 52px;
+    img {
+        cursor: pointer;
+    }
+  }
+  &__add-product,
+  &__add-dress,
+  &__add-order {
+    display: flex;
+    align-items: center;
+    background: rgba(213, 213, 213, 1);
+    padding: 6.5px 8px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+  }
+  &__add-product {
+    margin-left: 104px;
+  }
+  &__add-dress {
+    margin-left: 52px;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__status {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    img {
+        cursor: pointer;
+    }
+  }
+
+  &__operations {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 156px;
+  }
+}
+
+.order-list-item__addionational {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-list-addionational__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(213, 213, 213, 1);
+  padding: 6.5px 8px;
+  img {
+    cursor: pointer;
+  }
+}
+.order-list-addionational__block.first {
+  margin-left: 52px;
+  padding-left: 52px;
+}
+.order-list-addionational__block.second {
+  margin-left: 104px;
+  padding-left: 52px;
+}
